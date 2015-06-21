@@ -1,0 +1,44 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.half {
+  width: 50%;
+}
+
+.social {
+  font-size: 200%;
+}
+
+section {
+  min-height: 98%; /* hack */
+}
+
+.intro {
+  font-size: 650%;
+  text-shadow: 1px 1px 2px black,
+    0 0 1em #63E1F9,
+    0 0 0.2em #63E1F9;
+}
+
+.no-transform {
+  text-transform: none;
+}
+
+h2 small, h1 small {
+  text-transform: none;
+}
+
+.intro-to-irc {
+  padding-top: 75px;
+}
+
+code {
+  font-size: 85%;
+  text-transform: none;
+  color: #00FF00;
+  font-family: monospace;
+  background-color: #151515;
+}

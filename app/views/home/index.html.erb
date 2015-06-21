@@ -1,0 +1,10 @@
+<h1>Posts</h1>
+<% @posts.each do |post| %>
+  <h2><%= post.title %></h2>
+  <p><%= post.id %> :: <%= post.body %></p>
+<% end %>
+
+<h1>Events</h1>
+<% @events.each do |event| %>
+  <h2><%= event.name %></h2>
+<% end %>

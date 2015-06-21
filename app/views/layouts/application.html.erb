@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Insomnia LAN Intranet</title>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= csrf_meta_tags %>
+
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <span class="light">Intranet</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="hidden"><a href="#page-top"></a></li>
+                  <li><a class="page-scroll" href="#news">News</a></li>
+                  <li><a class="page-scroll" href="#wifi">Wi-Fi</a></li>
+                  <li><a class="page-scroll" href="#files">Files</a></li>
+                  <li><a class="page-scroll" href="#irc">IRC</a></li>
+                  <li><a class="page-scroll" href="#voice">Voice</a></li>
+                  <li><a class="page-scroll" href="#tournaments">Tournaments</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="brand-heading">
+                <%= image_tag "pittco_logo_header.png" %>
+                Insomnia 
+              </h1>
+              <a href="#news" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="news" class="content-section text-center">
+      <div class="container">
+
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Tournament Changes<br>
+            <small>Saturday 18:21 - binarycleric</small>
+          </h1>
+          <p>
+            Due to unforeseen issues we've made some tournament changes. Killer
+            Instinct has been moved back to 7PM and Mario Kart has been
+            canceled. Sorry everyone, we're just as upset as you are.
+          </p>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Tournament Sign Up is Open<br>
+            <small>Saturday 12:34 - binarycleric</small>
+          </h1>
+          <p>
+            Tournament sign up is now open. Click on the <a class="page-scroll" href="#tournaments">tournaments</a>
+            tab to see a list of games and times. We try our best to schedule
+            things properly but sometimes tournaments overlap.  
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="wifi" class="content-section text-center">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>
+            Wi-Fi<br>
+            <small>SSID: PittCo</small><br>
+            <small>Password: pittco123</small>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="files" class="content-section text-center">
+      <h1>
+        Files<br>
+        <small>In case you forgot to install something important</small>
+      </h1>
+
+      <h2>
+        <a href="http://files.pittco.loc">Check out our file server</a><br>
+        <small>files.pittco.loc</small>
+      </h2>
+    </section>
+
+    <section id="irc" class="content-section text-center">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>
+            If you have an IRC client<br>
+            <small>(like mIRC, HexChat, Textual)</small>
+          </h1>
+
+          <h2>
+            <a href="irc://irc.pittco.loc">Connect to IRC</a><br>
+            <small>irc.pittco.loc</small> 
+          </h2>
+
+          <h3>Otherwise...</h3>
+
+          <h2>
+            <a href="http://irc.pittco.loc" target="_blank">Connect to Web Chat</a><br>
+            <small>http://irc.pittco.loc</small>
+          </h2>
+
+          <h2>
+            Channels<br>
+            <small class="no-transform">#pittco</small><br>
+            <small class="no-transform">#help</small><br>
+            <small class="no-transform">#food</small><br>
+          </h2>
+
+          <h1 class="intro-to-irc">Intro to IRC</h1>
+
+          <p>
+            Registering allows you to create channels and protects your nickname from unauthorized use.
+          </p>
+
+          <h2>Register a nick</h2>
+          <h3>
+            <code class="no-transform">/msg NickServ register your_password email@address.com</code>
+          </h3>
+
+          <h2>Identify yourself</h3>
+          <h3>
+            <code class="no-transform">/msg NickServ identify your_password</code>
+          </h3>
+
+          <h2>NickServ help</h2>
+          <h3>
+            <code class="no-transform">/msg NickServ help</code>
+          </h3>
+
+          <h2>Create a channel</h2>
+          <p>
+            If you need a channel simply use the commands below with a properly identified nickname.
+          </p>
+          <h3>
+            <code class="no-transform">/msg ChanServ register #channel_name</code>
+          </h3>
+
+          <h2>ChanServ help</h2>
+          <h3>
+            <code class="no-transform">/msg ChanServ help</code>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="voice" class="content-section text-center">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Voice Chat Services</h1>
+
+          <h2>
+            <a href="mumble://voice.pittco.loc/?version=1.2.8">Connect to Mumble</a><br>
+            <small>voice.pittco.loc</small>
+          </h2>
+
+          <h2>
+            <a href="ts3server://voice.pittco.loc:9987">Connect to Teamspeak</a><br>
+            <small>voice.pittco.loc:9987</small>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="tournaments" class="content-section text-center">
+      <h1>Tournaments</h1>
+
+      <h2>
+        HearthStone<br>
+        <small>Saturday @ 3:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/CVSYh35koY">Sign up</a></small>
+        <!-- &mdash;
+        <small><a href="#">Standings</a></small> -->
+      </h2>
+
+      <h2>
+        Halo 3<br>
+        <small>Saturday @ 3:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/VrUIpbYk0r">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Counter-Strike: GO<br>
+        <small>Saturday @ 5:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/BH7cbmdvHH">Sign up</a></small>
+      </h2>
+
+      <h2>
+        StarCraft II<br>
+        <small>Saturday @ 6:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/Mkiu8zxxmG">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Killer Instinct<br>
+        <small>Saturday @ 7:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/27RNSg88HD">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Call of Duty: Ghosts<br>
+        <small>Saturday @ 9:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/GGNIlgHmTm">Sign up</a></small>
+      </h2>
+
+      <h2>
+        League of Legends<br>
+        <small>Saturday @ 11:00 PM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/kZc2V0whZM">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Titanfall 4 vs 4<br>
+        <small>Sunday @ 12:00 AM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/W7CwNO3svN">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Super Smash Bros: Brawl<br>
+        <small>Sunday @ 3:00 AM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/XtWRboNEBz">Sign up</a></small>
+      </h2>
+
+      <h2>
+        Clamato Bowl &mdash; Quake III<br>
+        <small>Sunday @ 4:00 AM<br></small>
+        <small><a href="http://challonge.com/tournaments/signup/Qg42EXrEuQ">Sign up</a></small>
+      </h2>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <div class="left half social">
+        <a href="http://pittco.org/facebook">
+          <i class="fa fa-facebook-square social"></i>
+        </a>
+
+        <a href="http://pittco.org/twitter">
+          <i class="fa fa-twitter-square social"></i>
+        </a>
+
+        <a href="https://github.com/pittco">
+          <i class="fa fa-github-square social"></i>
+        </a>
+        </div>
+
+        <div class="right half footer-text">
+          Made with <i class="fa fa-heart"></i> in Pittsburgh, PA <br>
+          <a href="http://pittco.org">The Pittsburgh LAN Coalition</a> <br>
+          10 years and still going! <br>
+          <a href="http://startbootstrap.com/template-overviews/grayscale/">Built with Grayscale</a>
+        </div>
+      </div>
+    </footer>
+
+    <%= yield %>
+
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
