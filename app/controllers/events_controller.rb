@@ -10,6 +10,12 @@ class EventsController < AdminController
 
   def new
     @event = Event.new
+    render 'edit'
+  end
+
+  def create
+    Event.create event_params 
+    redirect_to '/admin/events' 
   end
 
   def edit
@@ -18,12 +24,21 @@ class EventsController < AdminController
 
   def update
     @event = Event.find(params[:id])
+    @event.update event_params 
+
+    redirect_to '/admin/events' 
   end
 
   def destroy
     @event = Event.find(params[:id])
-    # @event.destroy
-    redirect_to posts_path
+    @event.destroy
+    redirect_to '/admin/events' 
+  end
+
+  private
+
+  def event_params
+    params.require(:event).permit(:name, :challonge_id, :starts_at, :ends_at)
   end
 
 end

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   scope '/admin' do
     resources :events
+    resources :posts
   end
 end
