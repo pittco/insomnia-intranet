@@ -15,10 +15,11 @@ ActiveRecord::Schema.define(version: 20150621162343) do
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
+    t.string   "challonge_id"
     t.datetime "starts_at"
     t.datetime "ends_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "posts", force: :cascade do |t|

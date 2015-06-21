@@ -1,0 +1,14 @@
+<section id="news" class="content-section text-center">
+  <div class="container">
+
+    <% @posts.each do |post| %>
+      <div class="col-md-8 col-md-offset-2">
+        <h1><%= post.title %><br>
+          <small><%= post.created_at.strftime("%A @ %l:%M %p") %> - binarycleric</small>
+        </h1>
+        <p><%= post.id %> :: <%= post.body %></p>
+      </div>
+    <% end %>
+
+  </div>
+</section>

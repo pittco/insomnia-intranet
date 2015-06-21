@@ -1,0 +1,11 @@
+<section id="tournaments" class="content-section text-center">
+  <h1>Tournaments</h1>
+
+  <% @events.each do |event| %>
+    <h2>
+      <%= event.name %><br>
+      <small><%= event.created_at.strftime("%A @ %l:%M %p") %></small>
+      <small><a href="http://challonge.com/tournaments/signup/VrUIpbYk0r">Sign up</a></small>
+    </h2>
+  <% end %>
+</section>
