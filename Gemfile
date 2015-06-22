@@ -11,6 +11,8 @@ gem 'omniauth-google-oauth2'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
 
 group :development, :test do
   gem 'foreman'

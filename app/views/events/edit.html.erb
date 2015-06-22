@@ -1,3 +1,5 @@
+<h2>Edit Event</h2>
+
 <%= form_for @event do |f| %>
   <div class="form-group">
     <%= f.label :name %>
@@ -5,26 +7,22 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :challonge_id %>
+    <%= f.label :challonge_id, 'Challonge URL Fragment' %>
+    <%= link_to "- Create New Tournament in Challonge", "http://challonge.com/tournaments/new" %>
     <%= f.text_field :challonge_id, class: 'form-control' %>
   </div>
 
   <div class="form-group">
     <%= f.label :starts_at %>
-    <%= f.datetime_field :starts_at, class: 'form-control' %>
+    <div class="controls" style="position: relative">
+    <%= f.datetime_field :starts_at, class: 'form-control datetime' %>
   </div>
 
   <div class="form-group">
     <%= f.label :ends_at %>
-    <%= f.datetime_field :ends_at, class: 'form-control' %>
+    <div class="controls" style="position: relative">
+    <%= f.datetime_field :ends_at, class: 'form-control datetime' %>
   </div>
 
   <%= f.submit class: 'btn btn-default' %>
 <% end %>
-
-
-<% content_for :footer do %>
-  <script type="text/javascript">
-  </script>
-<% end %>
-

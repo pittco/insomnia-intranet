@@ -7,8 +7,8 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :body %>
-    <%= f.text_area :body, class: 'form-control' %>
+    <%= f.label :body %> - HTML allowed.
+    <%= f.text_area :body, class: 'form-control', rows: '10' %>
   </div>
 
   <%= f.submit class: 'btn btn-default' %>
