@@ -16,7 +16,7 @@ class AuthController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/admin'
     else
-      raise 'Nope'
+      render 'no_entry', layout: false 
     end
   end
 
