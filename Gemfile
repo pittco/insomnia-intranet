@@ -1,3 +1,4 @@
+ruby '2.2.2'
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
@@ -13,6 +14,8 @@ gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
+
+gem 'rails_12factor'
 
 group :production do
   gem 'pg'
