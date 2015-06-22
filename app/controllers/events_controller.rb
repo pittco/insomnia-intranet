@@ -14,8 +14,14 @@ class EventsController < AdminController
   end
 
   def create
-    Event.create event_params 
-    redirect_to '/admin/events' 
+    @event = Event.create event_params 
+
+    if @event.valid?
+      redirect_to '/admin/events' 
+    else
+      flash[:alert] = @event.errors.full_messages
+      render 'edit'
+    end
   end
 
   def edit
@@ -26,7 +32,12 @@ class EventsController < AdminController
     @event = Event.find(params[:id])
     @event.update event_params 
 
-    redirect_to '/admin/events' 
+    if @event.valid?
+      redirect_to '/admin/events' 
+    else
+      flash[:alert] = @event.errors.full_messages
+      render 'edit'
+    end
   end
 
   def destroy
