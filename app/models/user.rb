@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :posts
+  serialize :data_hash
 
   def self.from_omniauth(access_token)
     data = access_token.info
