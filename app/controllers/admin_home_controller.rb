@@ -1,12 +1,7 @@
 class AdminHomeController < AdminController
 
   def index
-  end
-
-  def login
-    Rails.logger.debug request.env["omniauth.auth"]
-    
-    redirect_to '/admin'
+    @user = current_user
   end
 
 end
