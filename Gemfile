@@ -17,6 +17,7 @@ gem 'bootstrap3-datetimepicker-rails'
 
 gem 'rails_12factor'
 gem 'puma'
+gem 'airbrake'
 
 group :production do
   gem 'pg'
