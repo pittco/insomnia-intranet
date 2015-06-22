@@ -14,7 +14,7 @@ class PostsController < AdminController
   end
 
   def create
-    Post.create post_params 
+    current_user.posts.create post_params 
     redirect_to '/admin/posts' 
   end
 

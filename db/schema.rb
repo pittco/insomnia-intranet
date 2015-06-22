@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20150621233737) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,5 +37,8 @@ ActiveRecord::Schema.define(version: 20150621233737) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["username"], name: "index_users_on_username", unique: true
 
 end
