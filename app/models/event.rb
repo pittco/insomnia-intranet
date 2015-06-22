@@ -1,3 +1,3 @@
 class Event < ActiveRecord::Base
-  default_scope { order(created_at: :asc) }
+  default_scope { order(starts_at: :desc) }
 end
