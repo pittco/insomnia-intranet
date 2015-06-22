@@ -4,7 +4,9 @@
     <% @posts.each do |post| %>
       <div class="col-md-8 col-md-offset-2">
         <h1><%= post.title %><br>
-          <small><%= format_date post.created_at %> - <%= post.author_name %></small>
+          <small>
+            <%= format_date post.created_at %> - <%= post.author_name %>
+          </small>
         </h1>
         <p><%= post.body %></p>
       </div>
