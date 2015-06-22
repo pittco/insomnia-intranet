@@ -6,3 +6,8 @@
 body {
   padding-top: 50px;
 }
+
+.error-message {
+  @extend .bg-danger;
+  margin-top: 1em;
+}

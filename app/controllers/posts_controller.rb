@@ -14,8 +14,14 @@ class PostsController < AdminController
   end
 
   def create
-    current_user.posts.create post_params 
-    redirect_to '/admin/posts' 
+    @post = current_user.posts.create post_params
+
+    if @post.valid?
+      redirect_to '/admin/posts' 
+    else
+      flash[:alert] = @post.errors.full_messages
+      render 'edit'
+    end
   end
 
   def edit
@@ -26,7 +32,12 @@ class PostsController < AdminController
     @post = Post.find(params[:id])
     @post.update post_params 
 
-    redirect_to '/admin/posts' 
+    if @post.valid?
+      redirect_to '/admin/posts' 
+    else
+      flash[:alert] = @post.errors.full_messages
+      render 'edit'
+    end
   end
 
   def destroy
