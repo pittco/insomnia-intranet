@@ -8,4 +8,9 @@ module ApplicationHelper
     "http://challonge.com/tournaments/signup/#{event.challonge_id}"
   end 
 
+  def organization_age
+    distance_of_time_in_words(Time.now, Time.local(2003,12,25))
+  end
+
+
 end
