@@ -4,7 +4,7 @@
   <% @events.each do |event| %>
     <h2>
       <%= event.name %><br>
-      <small><%= format_date event.created_at %></small>
+      <small><%= format_date event.starts_at %></small>
       <% unless event.challonge_id.blank? %>
         <small><a href="<%= challonge_url(event) %>">Sign up</a></small>
       <% end %>
