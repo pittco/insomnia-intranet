@@ -6,3 +6,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     image_size: 50
   }
 end
+
+OmniAuth.config.on_failure = AuthController.action(:login)
