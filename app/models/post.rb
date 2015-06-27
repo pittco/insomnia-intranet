@@ -9,4 +9,10 @@ class Post < ActiveRecord::Base
     user.username rescue 'Nobody'
   end
 
+  def rendered_body
+    renderer = Redcarpet::Render::HTML.new(no_styles: true, escape_html: true)
+    markdown = Redcarpet::Markdown.new(renderer)
+    markdown.render(self.body).html_safe
+  end
+
 end
