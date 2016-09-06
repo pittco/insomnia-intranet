@@ -4,8 +4,9 @@ class User < ActiveRecord::Base
 
   def self.from_omniauth(access_token)
     data = access_token.info
-    return nil unless data['email'].match /\@pittco.org$/ 
+    return nil unless data['email'].match /\@pittco.org$/
     user = User.where(email: data['email']).first
+
     unless user
       user = User.create username: data['name'],
                          email: data['email'],
@@ -14,5 +15,4 @@ class User < ActiveRecord::Base
 
     user
   end
-
 end
