@@ -18,7 +18,6 @@ gem 'redcarpet'
 
 gem 'rails_12factor'
 gem 'puma'
-gem 'airbrake'
 gem 'newrelic_rpm'
 
 group :production do
