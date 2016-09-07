@@ -15,6 +15,7 @@ gem 'bootstrap-sass'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'redcarpet'
+gem 'rack-ssl-enforcer'
 
 gem 'rails_12factor'
 gem 'puma'
