@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   post '/logout' => 'auth#logout'
   get '/login' => 'auth#login'
   get '/auth/google_oauth2/callback' => 'auth#oauth2_callback'
+  get '/.well-known/acme-challenge/:id' => 'pages#letsencrypt'
 end
